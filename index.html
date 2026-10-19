@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="my">
+<head><meta name="swp-repo" content="Kyaw5064/smart-wallet-download"><meta name="swp-web" content="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Smart Wallet Pro — ဒေါင်းရန်</title>
+<meta name="description" content="ထိုင်းရောက် မြန်မာ အလုပ်သမားတွေအတွက် ငွေစာရင်း · စာရွက်စာတမ်း · မိသားစု App">
+<meta property="og:title" content="🐘 Smart Wallet Pro — အခမဲ့ ဒေါင်းပါ">
+<meta property="og:description" content="ငွေစာရင်း · မိသားစု · ထိုင်းစကား · AI — မြန်မာ အလုပ်သမားတွေအတွက်">
+<meta property="og:image" content="https://kyaw5064.github.io/smart-wallet-download/icon-512.png">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f0fdfa;--ink:#0f172a;--mu:#475569;--card:#fff;--ln:#cbd5e1;--pr:#0f766e}
+@media (prefers-color-scheme:dark){:root{--bg:#04201d;--ink:#e2e8f0;--mu:#94a3b8;--card:#0b2e2a;--ln:#134e4a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Myanmar",system-ui,sans-serif;line-height:1.75}
+.hero{position:relative;overflow:hidden;padding:44px 18px 70px;text-align:center;color:#fff;background:linear-gradient(140deg,#0f766e,#0e7490 50%,#4338ca)}
+.hero:before,.hero:after{content:'';position:absolute;border-radius:50%;background:#ffffff14}
+.hero:before{width:320px;height:320px;top:-120px;right:-90px}.hero:after{width:220px;height:220px;bottom:-110px;left:-60px}
+.logo{width:112px;height:112px;border-radius:30px;box-shadow:0 20px 50px #0006;animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-3deg)}}
+h1{margin:14px 0 4px;font-size:28px;line-height:1.4}
+.hero p{margin:0 auto;max-width:420px;color:#ffffffd8}
+.ver{display:inline-block;margin-top:10px;padding:4px 12px;border-radius:99px;background:#ffffff26;font-size:13px}
+main{max-width:520px;margin:-46px auto 0;padding:0 16px 40px;position:relative}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:24px;padding:18px;box-shadow:0 14px 40px #0f172a14;margin-bottom:14px}
+.dl{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:18px;border:0;border-radius:20px;font:inherit;font-size:19px;font-weight:900;color:#fff;text-decoration:none;background:linear-gradient(135deg,#16a34a,#0d9488);box-shadow:0 14px 30px #16a34a55;position:relative;overflow:hidden}
+.dl:after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,#ffffff55 50%,transparent 70%);transform:translateX(-100%);animation:shine 2.6s ease-in-out infinite}
+@keyframes shine{60%,100%{transform:translateX(100%)}}
+.dl small{font-weight:600;opacity:.9;font-size:13px}
+.web{display:block;text-align:center;margin-top:12px;padding:13px;border-radius:16px;border:1.5px solid var(--ln);color:var(--ink);text-decoration:none;font-weight:700}
+.gift{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,#fdf2f8,#ede9fe);color:#4a044e;border:0}
+.gift b{display:block}.gift code{font-size:12px;word-break:break-all}
+.gift button{flex:none;border:0;border-radius:12px;padding:10px 12px;font:inherit;font-weight:800;background:#7e22ce;color:#fff}
+h2{font-size:17px;margin:0 0 10px}
+.st{display:grid;gap:10px}.st div{display:flex;gap:10px;align-items:flex-start}
+.st i{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:900;color:#fff;background:var(--pr)}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:8px}.feat div{padding:12px;border-radius:16px;background:var(--bg);font-size:14px}.feat b{display:block;font-size:22px}
+.note{font-size:13px;color:var(--mu)}
+footer{text-align:center;font-size:12px;color:var(--mu);padding-bottom:30px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <img class="logo" src="icon-512.png" alt="Smart Wallet elephant logo">
+  <h1>Smart Wallet Pro 🐘</h1>
+  <p>ထိုင်းရောက် မြန်မာ အလုပ်သမားတွေအတွက် ငွေစာရင်း · မိသားစု · ထိုင်းစကား · AI — အခမဲ့</p>
+  <span class="ver" id="ver">Android APK</span>
+</header>
+<main>
+  <div class="card">
+    <a class="dl" id="dl" href="smart-wallet.apk" download>⬇ APK ဒေါင်းမယ် <small id="sz"></small></a>
+    <a class="web" id="web" href="./">🌐 ဒေါင်းစရာမလို — ဝဘ်မှာ တန်းသုံးမယ်</a>
+  </div>
+  <div class="card gift" id="gift" hidden>
+    <div style="font-size:34px">🎁</div>
+    <div style="flex:1;min-width:0"><b>သူငယ်ချင်းက ဖိတ်ထားတယ်!</b><small>App ထဲ → 📲 ဖိတ်ခေါ် → "ဖိတ်ကုဒ် ထည့်မယ်" မှာ ဒီကုဒ် ထည့်ပါ</small><br><code id="code"></code></div>
+    <button id="cp">📋 ကူး</button>
+  </div>
+  <div class="card">
+    <h2>📲 ထည့်နည်း (၁ မိနစ်)</h2>
+    <div class="st">
+      <div><i>1</i><span>အပေါ်က <b>⬇ APK ဒေါင်းမယ်</b> ကိုနှိပ် → ဒေါင်းပြီးရင် ဖိုင်ကို ဖွင့်</span></div>
+      <div><i>2</i><span>"<b>Install unknown apps</b>" ပေါ်ရင် → <b>Allow from this source</b> ကို ဖွင့်ပြီး Back ပြန်နှိပ်</span></div>
+      <div><i>3</i><span><b>Install</b> နှိပ် — Play Protect သတိပေးရင် "<b>Install anyway</b>" (Play Store မှာ မတင်ရသေးလို့ ပေါ်တာပါ)</span></div>
+      <div><i>4</i><span>Gmail နဲ့ ဝင် → ဖုန်းအဟောင်းက Backup တွေ၊ မိသားစု၊ ချစ်သူ အကုန် အော်တို ပြန်ရောက်မယ် ☁️</span></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>✨ ဘာတွေပါလဲ</h2>
+    <div class="feat">
+      <div><b>💰</b>ငွေစာရင်း · လစာ · OT</div>
+      <div><b>👨‍👩‍👧</b>မိသားစု · ချစ်သူ · ✅ ဘေးကင်း</div>
+      <div><b>🗣️</b>ထိုင်းစကား အသံနဲ့</div>
+      <div><b>📄</b>ပါမစ် · ပတ်စပို့ သတိပေး</div>
+      <div><b>⏰</b>နိုးစက် · သတိပေးချက်</div>
+      <div><b>🤖</b>AI အကူ · ဘာသာပြန်</div>
+    </div>
+  </div>
+  <p class="note" id="upd"></p>
+</main>
+<footer>🐘 Smart Wallet Pro · <a href="privacy.html" style="color:inherit">Privacy</a></footer>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search),r=q.get('ref');
+  if(r&&/^[\w-]{6,64}$/.test(r)){
+    document.getElementById('gift').hidden=false;
+    document.getElementById('code').textContent=r;
+    document.getElementById('web').href='./?ref='+encodeURIComponent(r);
+    document.getElementById('cp').onclick=function(){try{navigator.clipboard.writeText(r);this.textContent='✓'}catch(e){}};
+  }
+  // GitHub download page: the APK comes from the public repo's newest release
+  var gh=(document.querySelector('meta[name=swp-repo]')||{}).content;
+  if(gh&&/^[\w.-]+\/[\w.-]+$/.test(gh)){
+    document.getElementById('dl').href='https://github.com/'+gh+'/releases/latest/download/smart-wallet.apk';
+    var wb=(document.querySelector('meta[name=swp-web]')||{}).content;
+    if(wb){document.getElementById('web').href=wb+(r?'?ref='+encodeURIComponent(r):'')}else document.getElementById('web').hidden=true;
+    fetch('https://api.github.com/repos/'+gh+'/releases/latest').then(function(x){return x.ok?x.json():null}).then(function(v){
+      if(!v)return;var a=(v.assets||[]).filter(function(x){return x.name=='smart-wallet.apk'})[0];
+      document.getElementById('ver').textContent='Android APK · '+String(v.tag_name||'').replace(/^v/,'v');
+      if(a)document.getElementById('sz').textContent='('+(a.size/1048576).toFixed(1)+' MB)';
+      if(v.published_at)document.getElementById('upd').textContent='နောက်ဆုံး update: '+new Date(v.published_at).toLocaleDateString();
+    }).catch(function(){});
+    return;
+  }
+  fetch('version.json',{cache:'no-store'}).then(function(x){return x.ok?x.json():null}).then(function(v){
+    if(!v)return;
+    if(v.ver)document.getElementById('ver').textContent='Android APK · v'+v.ver;
+    if(v.size)document.getElementById('sz').textContent='('+(v.size/1048576).toFixed(1)+' MB)';
+    if(v.at)document.getElementById('upd').textContent='နောက်ဆုံး update: '+new Date(v.at).toLocaleDateString();
+  }).catch(function(){});
+})();
+</script>
+</body>
+</html>
