@@ -92,20 +92,9 @@ footer{text-align:center;font-size:12px;color:var(--mu);padding-bottom:30px}
     document.getElementById('web').href='./?ref='+encodeURIComponent(r);
     document.getElementById('cp').onclick=function(){try{navigator.clipboard.writeText(r);this.textContent='✓'}catch(e){}};
   }
-  // GitHub download page: the APK comes from the public repo's newest release
-  var gh=(document.querySelector('meta[name=swp-repo]')||{}).content;
-  if(gh&&/^[\w.-]+\/[\w.-]+$/.test(gh)){
-    document.getElementById('dl').href='https://github.com/'+gh+'/releases/latest/download/smart-wallet.apk';
-    var wb=(document.querySelector('meta[name=swp-web]')||{}).content;
-    if(wb){document.getElementById('web').href=wb+(r?'?ref='+encodeURIComponent(r):'')}else document.getElementById('web').hidden=true;
-    fetch('https://api.github.com/repos/'+gh+'/releases/latest').then(function(x){return x.ok?x.json():null}).then(function(v){
-      if(!v)return;var a=(v.assets||[]).filter(function(x){return x.name=='smart-wallet.apk'})[0];
-      document.getElementById('ver').textContent='Android APK · '+String(v.tag_name||'').replace(/^v/,'v');
-      if(a)document.getElementById('sz').textContent='('+(a.size/1048576).toFixed(1)+' MB)';
-      if(v.published_at)document.getElementById('upd').textContent='နောက်ဆုံး update: '+new Date(v.published_at).toLocaleDateString();
-    }).catch(function(){});
-    return;
-  }
+  // GitHub page: smart-wallet.apk and version.json sit next to this page
+  var wb=(document.querySelector('meta[name=swp-web]')||{}).content;
+  if(document.querySelector('meta[name=swp-repo]')){if(wb)document.getElementById('web').href=wb+(r?'?ref='+encodeURIComponent(r):'');else document.getElementById('web').hidden=true}
   fetch('version.json',{cache:'no-store'}).then(function(x){return x.ok?x.json():null}).then(function(v){
     if(!v)return;
     if(v.ver)document.getElementById('ver').textContent='Android APK · v'+v.ver;
