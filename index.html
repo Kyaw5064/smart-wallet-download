@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="my">
-<head><meta name="swp-repo" content="Kyaw5064/smart-wallet-download"><meta name="swp-web" content="">
+<head><meta name="swp-repo" content="Kyaw5064/smart-wallet-download"><meta name="swp-web" content="https://money-1f039.web.app/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Smart Wallet Pro — ဒေါင်းရန်</title>
@@ -52,7 +52,7 @@ footer{text-align:center;font-size:12px;color:var(--mu);padding-bottom:30px}
 </header>
 <main>
   <div class="card">
-    <a class="dl" id="dl" href="smart-wallet.apk" download>⬇ APK ဒေါင်းမယ် <small id="sz"></small></a>
+    <a class="dl" id="dl" href="https://github.com/Kyaw5064/smart-wallet-download/raw/main/smart-wallet.apk">⬇ APK ဒေါင်းမယ် <small id="sz"></small></a>
     <a class="web" id="web" href="./">🌐 ဒေါင်းစရာမလို — ဝဘ်မှာ တန်းသုံးမယ်</a>
   </div>
   <div class="card gift" id="gift" hidden>
@@ -104,7 +104,7 @@ footer{text-align:center;font-size:12px;color:var(--mu);padding-bottom:30px}
   }
   // GitHub page: smart-wallet.apk and version.json sit next to this page
   var wb=(document.querySelector('meta[name=swp-web]')||{}).content;
-  if(document.querySelector('meta[name=swp-repo]')){if(wb)document.getElementById('web').href=wb+(r?'?ref='+encodeURIComponent(r):'');else document.getElementById('web').hidden=true}
+  if(document.querySelector('meta[name=swp-repo]')){document.getElementById('dl').href='smart-wallet.apk';if(wb)document.getElementById('web').href=wb+(r?'?ref='+encodeURIComponent(r):'');else document.getElementById('web').hidden=true}
   fetch('version.json',{cache:'no-store'}).then(function(x){return x.ok?x.json():null}).then(function(v){
     if(!v)return;
     if(v.ver)document.getElementById('ver').textContent='Android APK · v'+v.ver;
